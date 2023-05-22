@@ -4,7 +4,7 @@ local function BeefaloCancel(inst)
     GLOBAL.TheNet:SendRPCToServer(GLOBAL.RPC.MakeRecipeFromMenu, 144) -- torch
     GLOBAL.ThePlayer:DoTaskInTime(0.1,function()
         GLOBAL.TheNet:SendRPCToServer(GLOBAL.RPC.LeftClick, GLOBAL.ACTIONS.WALKTO.code, wx+1,wz+1)
-            GLOBAL.ThePlayer:DoTaskInTime(0.1,function()
+            GLOBAL.ThePlayer:DoTaskInTime(0.08,function()
             GLOBAL.TheNet:SendRPCToServer(GLOBAL.RPC.RightClick, GLOBAL.ACTIONS.MOUNT.code, wx, wz, beefalo)
         end)
     end)
