@@ -1,7 +1,7 @@
 local function BeefaloCancel(inst)
     local beefalo = inst.replica.rider.classified ~= nil and inst.replica.rider.classified.ridermount:value()
     local wx, _, wz = beefalo.Transform:GetWorldPosition()
-    GLOBAL.TheNet:SendRPCToServer(GLOBAL.RPC.MakeRecipeFromMenu, 144) -- torch
+    GLOBAL.TheNet:SendRPCToServer(GLOBAL.RPC.MakeRecipeFromMenu, 165) -- torch
     GLOBAL.ThePlayer:DoTaskInTime(0.1,function()
         GLOBAL.TheNet:SendRPCToServer(GLOBAL.RPC.LeftClick, GLOBAL.ACTIONS.WALKTO.code, wx+1,wz+1)
             GLOBAL.ThePlayer:DoTaskInTime(0.08,function()
