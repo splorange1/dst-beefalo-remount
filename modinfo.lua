@@ -1,6 +1,6 @@
 name = "Beefalo Remount"
 --The name of your mod
-description = "--"
+description = "Automatically remounts your beefalo if thrown off"
 --The description that shows when you are selecting the mod from the list
 author = "splorange"
 --Your name!
